@@ -1,0 +1,32 @@
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 90%;
+}
+
+.carousel-item {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: 10px;
+  width: 60%;
+}
+
+.carousel-item img {
+  max-width: 100%;
+}
+
+.btnNext {
+  background: transparent;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

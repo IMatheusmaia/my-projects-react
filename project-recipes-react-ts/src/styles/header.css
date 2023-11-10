@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(252, 220, 54);
+  display: flex;
+  flex-direction: row;
+  height: 3.25rem;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  margin-left: 0.8rem;
+  min-height: 100%;
+  width: 70vw;
+}
+
+.title-container > img {
+  height: 2.6rem;
+  width: 2.45rem;
+}
+
+.title-container > p {
+  font-family: ' Epilogue' , sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.title-container > p > span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  width: 30vw;
+}
+
+.nav > img {
+  height: 1.7rem;
+  width: 1.7rem;
+}

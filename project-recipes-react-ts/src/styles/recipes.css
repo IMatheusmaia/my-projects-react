@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-container {
+  height: auto;
+  padding: 2rem 0;
+  width: 100vw;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+.loading {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.recipe-card {
+  border-bottom: 2px groove rgba(128, 128, 128, 0.493);
+  border-radius: 6px;
+  border-right: 4px groove rgba(128, 128, 128, 0.493);
+  color: black;
+  height: auto;
+  padding-bottom: 1rem;
+  width: 10.2rem;
+}
+
+.recipe-card > img {
+  height: 90%;
+  width: 100%;
+}
+
+.recipe-card > figcaption {
+  font-family: ' Epilogue' , sans-serif;
+  font-style: italic;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.buttons-container {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  height: auto;
+  justify-content: start;
+  overflow-x: auto;
+  padding: 0 0.5rem;
+  width: 100vw;
+}
+
+.category-btn, .category-reset {
+  align-items: center;
+  border: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  padding: 0.3rem 0.5rem;
+}
+
+.category-btn > img, .category-reset > img {
+  height: 4rem;
+  object-fit: cover;
+  object-position: top;
+  width: 4rem;
+}
