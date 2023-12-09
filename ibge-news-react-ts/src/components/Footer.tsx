@@ -9,10 +9,10 @@ function Footer() {
   return (
     <footer className={ theme === 'dark' ? 'footer-dark' : 'footer-light' }>
       <div className="icons-container">
-        <Link to="https://github.com/IMatheusmaia" target="_blank">
+        <Link to="https://github.com/IMatheusmaia" target="_blank" data-testid="github">
           <FaGithub />
         </Link>
-        <Link id="linkedin" to="https://www.linkedin.com/in/%C3%ADcaro-maia-a2103899/" target="_blank">
+        <Link id="linkedin" to="https://www.linkedin.com/in/%C3%ADcaro-maia-a2103899/" target="_blank" data-testid="linkedin">
           <FaLinkedinIn />
         </Link>
       </div>

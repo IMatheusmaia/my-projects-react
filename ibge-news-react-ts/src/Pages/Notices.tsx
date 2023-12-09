@@ -68,6 +68,7 @@ function Notices() {
               }
       </div>
       <button
+        data-testid="more-news"
         className={ theme === 'light' ? 'more-news' : 'more-news-dark' }
         onClick={ () => setTail(tail + 10) }
       >

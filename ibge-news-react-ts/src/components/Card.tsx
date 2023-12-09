@@ -34,21 +34,38 @@ function Card({ notice }: CardProps) {
     setIsFavorite(false);
   };
   return (
-    <article className={ theme === 'dark' ? 'cardDark' : '' }>
-      <h1>{ notice.titulo }</h1>
-      <p>{notice.introducao}</p>
-      <span>{notice.diffDays === 0 ? 'hoje' : `${notice.diffDays} dia(s) atrás`}</span>
-      <Link to={ notice.link }>
+    <article
+      className={ theme === 'dark' ? 'cardDark' : '' }
+      data-testid={ `card-${notice.id}` }
+    >
+      <h1
+        data-testId={ `card-title-${notice.id}` }
+      >
+        { notice.titulo }
+      </h1>
+      <p
+        data-testId={ `card-text-${notice.id}` }
+      >
+        {notice.introducao}
+      </p>
+      <span
+        data-testId={ `card-date-${notice.id}` }
+      >
+        {notice.diffDays === 0 ? 'hoje' : `${notice.diffDays} dia(s) atrás`}
+      </span>
+      <Link to={ notice.link } data-testid={ `know-more-${notice.id}` }>
         <TiInfoLarge />
       </Link>
       { !isFavorite ? (
         <i
+          data-testid={ `favorite-${notice.id}` }
           onClickCapture={ () => handleFavorite(notice.id) }
         >
           <RiChatNewFill />
         </i>
       ) : (
         <i
+          data-testid={ `remove-${notice.id}` }
           onClickCapture={ () => handleRemove(notice.id) }
           className="remove-notice"
         >

@@ -15,10 +15,16 @@ function NavBar() {
         <img src={ logo } alt="ibge-logo" />
       </div>
       <div className="nav-right-container">
-        <i onClickCapture={ () => navegate('/') }>
+        <i
+          data-testid="nav-home"
+          onClickCapture={ () => navegate('/') }
+        >
           <RiFileListFill />
         </i>
-        <i onClickCapture={ () => (isLoged ? navegate('/user') : navegate('/login')) }>
+        <i
+          data-testid="nav-user"
+          onClickCapture={ () => (isLoged ? navegate('/user') : navegate('/login')) }
+        >
           <RiAdminFill />
         </i>
         <InputSwitch />
